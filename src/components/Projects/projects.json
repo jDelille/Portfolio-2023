@@ -1,0 +1,34 @@
+{
+ "projects": [
+  {
+   "id": 0,
+   "build": "React / TypeScript / Scss /Tone.js / Tonal.js",
+   "name": "Fretify - Interactive Guitar App",
+   "desc": "Interactive guitar fretboard created to make guitarists lives easier when learning new shapes and scales across the neck.",
+   "site": "https://fretify.netlify.app/",
+   "repo": "https://github.com/jDelille/fretify",
+   "image": "../public/images/vibro-light.png",
+   "npm": false
+  },
+  {
+   "id": 1,
+   "build": "Next.js / React / Typescript / Mobx / Firebase",
+   "name": "Muunifi",
+   "desc": "Interactive guitar fretboard created to make guitarists lives easier when learning new shapes and scales across the neck.",
+   "site": "",
+   "repo": "",
+   "image": "../public/images/vibro-light.png",
+   "npm": false
+  },
+  {
+   "id": 2,
+   "build": "React / Typescript / npm Package",
+   "name": "jd-react-select",
+   "desc": "A reusable, lightweight, and easy to use react select component I created with TypeScript.",
+   "site": "https://www.npmjs.com/package/jd-react-select",
+   "repo": "https://github.com/jDelille/react-select",
+   "image": "../public/images/vibro-light.png",
+   "npm": true
+  }
+ ]
+}
