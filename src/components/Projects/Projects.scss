@@ -1,0 +1,15 @@
+@import '../../styles/breakpoints';
+@import '../../styles/variables';
+
+.projects {
+	background-color: palegoldenrod;
+	width: 100%;
+	max-width: 736px;
+	@include breakpoint(sm) {
+		background-color: $honey;
+		min-width: 100%;
+	}
+	@include breakpoint(md) {
+		max-width: 536px;
+	}
+}

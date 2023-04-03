@@ -1,0 +1,12 @@
+@import '../../styles/breakpoints';
+
+.hero {
+	background-color: palegreen;
+	width: 100%;
+	max-width: 496px;
+	height: 80vh;
+	@include breakpoint(sm) {
+		background-color: paleturquoise;
+		min-width: 100%;
+	}
+}
