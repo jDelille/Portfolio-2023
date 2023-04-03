@@ -7,14 +7,15 @@
 	max-width: 736px;
 	min-width: 736px;
 	margin-left: auto;
-	@include breakpoint(lg) {
+	padding: 45px;
+
+	@include breakpoint(md) {
 		min-width: 536px;
 		max-width: 536px;
-		background-color: orange;
+		padding: 16px;
 	}
 	@include breakpoint(sm) {
-		background-color: $honey;
-		min-width: 100%;
+		max-width: 100%;
 		margin: unset;
 	}
 }

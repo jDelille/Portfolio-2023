@@ -1,9 +1,7 @@
 $breakpoints: (
-	'sm': '(max-width: 991.98px)',
-	'md': '(max-width: 992px)',
-	'lg': '(max-width: 1280px)',
-	'xl': '(min-width: 1200px) and (max-width: 1399.98px)',
-	'xxl': 'min-width: 1400px',
+	'sm': '(max-width: 1032px)',
+	'md': '(max-width: 1280px)',
+	'lg': 'min-width: 1400px',
 );
 
 @mixin breakpoint($value) {

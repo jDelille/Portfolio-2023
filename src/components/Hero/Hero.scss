@@ -6,15 +6,23 @@
 	max-width: 496px;
 	min-width: 496px;
 	height: 90vh;
-	padding: 32px;
+	padding: 45px;
 	position: relative;
+	@include breakpoint(md) {
+		padding: 16px;
+	}
 	@include breakpoint(sm) {
-		min-width: 100%;
+		max-width: 100%;
+		height: fit-content;
+		margin-bottom: 4rem;
 	}
 
 	h1 {
-		font-size: 46px;
+		font-size: 56px;
 		font-weight: 600;
+		@include breakpoint(md) {
+			font-size: 46px;
+		}
 	}
 
 	h2 {
@@ -79,6 +87,9 @@
 		align-items: center;
 		position: absolute;
 		bottom: 2rem;
+		@include breakpoint(sm) {
+			bottom: 0;
+		}
 		img {
 			max-width: 45px;
 			border-radius: 50%;
