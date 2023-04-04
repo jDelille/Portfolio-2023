@@ -50,12 +50,16 @@
 				align-items: center;
 				gap: 1rem;
 				cursor: pointer;
-				color: $gray;
+				a {
+					color: $gray;
+					text-decoration: none;
+				}
 				.number {
 					max-width: 20px;
 					min-width: 20px;
 					display: flex;
 					justify-content: center;
+					color: $gray;
 				}
 				.extended-line {
 					display: block;
@@ -73,7 +77,11 @@
 				}
 			}
 			.active-nav-link {
-				color: $silk;
+				a,
+				.number {
+					color: $silk;
+				}
+
 				.extended-line {
 					width: 85px;
 				}

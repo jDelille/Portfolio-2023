@@ -40,5 +40,13 @@ ul li {
 			flex-direction: column;
 			max-width: 100%;
 		}
+		.fixed {
+			position: fixed;
+		}
+		.scroll {
+			margin-left: auto;
+			min-height: 100vh;
+			position: relative;
+		}
 	}
 }
