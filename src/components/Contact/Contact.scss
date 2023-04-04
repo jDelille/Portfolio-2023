@@ -20,6 +20,7 @@
 	@include breakpoint(sm) {
 		max-width: 100%;
 		margin: unset;
+		margin-top: 6rem;
 	}
 	h1 {
 		margin-bottom: 3rem;
@@ -39,7 +40,8 @@
 			}
 			input,
 			textarea {
-				background: none;
+				background: transparent;
+				background-color: transparent;
 				border: none;
 				border-bottom: 1px solid $gray;
 				color: $gray;
@@ -50,7 +52,8 @@
 				min-height: 160px;
 			}
 		}
-		button {
+
+		.button {
 			max-width: 40%;
 			padding: 15px 30px;
 			background: none;

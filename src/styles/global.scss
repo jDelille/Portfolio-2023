@@ -19,6 +19,17 @@ body {
 	font-family: 'Inter', sans-serif;
 }
 
+input {
+	all: unset;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+	background-color: $mattBlack;
+}
+
 textarea {
 	font-family: 'Inter', sans-serif;
 }
