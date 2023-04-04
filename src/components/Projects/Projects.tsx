@@ -62,7 +62,7 @@ export default function Projects({ sectionRef }: ProjectsProps) {
                 </div>
               )}
               <a href={project.site}>View Site</a>
-              <a href={project.repo}>Source Code</a>
+              {!project.npm && <a href={project.repo}>Source Code</a>}
             </div>
           </div>
         </div>

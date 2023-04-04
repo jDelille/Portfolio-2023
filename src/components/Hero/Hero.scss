@@ -10,11 +10,12 @@
 	position: relative;
 	@include breakpoint(md) {
 		padding: 16px;
+		max-width: 100%;
+		min-width: 100%;
 	}
 	@include breakpoint(sm) {
 		max-width: 100%;
 		height: fit-content;
-		margin-bottom: 4rem;
 	}
 
 	h1 {
@@ -23,22 +24,36 @@
 		@include breakpoint(md) {
 			font-size: 46px;
 		}
+		@include breakpoint(sm) {
+			font-size: 38px;
+		}
 	}
 
 	h2 {
 		font-size: 32px;
 		margin-top: 0.75rem;
+		@include breakpoint(sm) {
+			font-size: 20px;
+		}
 	}
 
 	.bio {
 		margin-top: 2rem;
 		color: $gray;
+		max-width: 496px;
+		min-width: 496px;
+		@include breakpoint(sm) {
+			min-width: 100%;
+		}
 	}
 
 	// nav
 
 	nav {
 		margin: 3rem 0;
+		@include breakpoint(sm) {
+			display: none;
+		}
 		ul {
 			display: flex;
 			flex-direction: column;
@@ -96,12 +111,16 @@
 		position: absolute;
 		bottom: 2rem;
 		@include breakpoint(sm) {
-			bottom: 0;
+			position: relative;
+			margin-top: 4rem;
 		}
 		img {
 			max-width: 45px;
 			border-radius: 50%;
 			margin-right: 2rem;
+			@include breakpoint(sm) {
+				margin-right: 10px;
+			}
 		}
 		.linkedin,
 		.github {
@@ -110,6 +129,10 @@
 			gap: 1rem;
 			margin-right: 2rem;
 			cursor: pointer;
+			@include breakpoint(sm) {
+				gap: 7px;
+				margin: 15px;
+			}
 			p {
 				font-size: 14px;
 			}

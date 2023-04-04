@@ -22,6 +22,8 @@
 	@include breakpoint(sm) {
 		max-width: 100%;
 		margin: unset;
+		padding: 0;
+		min-width: 100%;
 	}
 	.overlay {
 		background-color: rgb(15, 15, 15);
@@ -43,7 +45,6 @@
 		display: flex;
 		transition: all 200ms ease-in-out;
 		position: relative;
-
 		cursor: pointer;
 		&:hover {
 			transform: scale(1.07);
@@ -53,7 +54,16 @@
 		}
 
 		@include breakpoint(md) {
-			width: 504px;
+			width: 100%;
+		}
+		@include breakpoint(sm) {
+			max-width: 100%;
+			min-width: 100%;
+			height: 250px;
+			padding: 16px;
+			&:hover {
+				transform: none;
+			}
 		}
 		.project-content {
 			display: flex;
@@ -66,13 +76,22 @@
 				text-transform: uppercase;
 				font-weight: 700;
 				letter-spacing: 1px;
+				@include breakpoint(sm) {
+					font-size: 0.6em;
+				}
 			}
 			.project-name {
 				font-weight: 500;
+				@include breakpoint(sm) {
+					font-size: 20px;
+				}
 			}
 			.project-description {
 				color: $gray;
 				font-size: 16px;
+				@include breakpoint(sm) {
+					width: 100%;
+				}
 			}
 			.project-links {
 				display: flex;

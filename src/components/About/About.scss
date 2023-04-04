@@ -2,10 +2,9 @@
 @import '../../styles/variables';
 
 .about {
-	width: 100%;
-	max-width: 736px;
-	min-width: 736px;
-	margin-left: auto;
+	width: 648px;
+
+	margin-right: auto;
 	display: flex;
 	margin-top: 45px;
 	flex-direction: column;
@@ -27,13 +26,21 @@
 	}
 	@include breakpoint(sm) {
 		max-width: 100%;
+		min-width: 100%;
+
 		margin: unset;
+		margin-top: 3rem;
 	}
 	.about-me {
 		line-height: 25px;
 		display: flex;
 		flex-direction: column;
 		gap: 1rem;
+		width: 100%;
+		@include breakpoint(sm) {
+			font-size: 16px;
+			width: 100%;
+		}
 	}
 	.skills-container {
 		width: 100%;

@@ -2,7 +2,7 @@
  "projects": [
   {
    "id": 0,
-   "build": "React / TypeScript / Scss /Tone.js / Tonal.js",
+   "build": "React / TypeScript / Scss ",
    "name": "Fretify - Interactive Guitar App",
    "desc": "Interactive guitar fretboard created to make guitarists lives easier when learning new shapes and scales across the neck.",
    "site": "https://fretify.netlify.app/",
@@ -22,7 +22,7 @@
   },
   {
    "id": 2,
-   "build": "React / Typescript / npm Package",
+   "build": "React / Typescript",
    "name": "jd-react-select",
    "desc": "A reusable, lightweight, and easy to use react select component I created with TypeScript.",
    "site": "https://www.npmjs.com/package/jd-react-select",
