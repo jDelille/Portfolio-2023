@@ -13,11 +13,11 @@
 	position: relative;
 	height: fit-content;
 	transition: all 200ms ease-in-out;
-
 	@include breakpoint(md) {
 		min-width: 536px;
 		max-width: 536px;
 		padding: 16px;
+		overflow-x: hidden;
 	}
 	@include breakpoint(sm) {
 		max-width: 100%;

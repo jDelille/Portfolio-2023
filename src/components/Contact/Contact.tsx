@@ -10,5 +10,5 @@ export default function Contact({ sectionRef }: ContactProps) {
   const sectionElement = sectionRef.current;
   // Use sectionElement for calculations or manipulations
  }, [sectionRef]);
- return <section className="contact" id="contact">Contact</section>;
+ return <section className="contact" id="contact"></section>;
 }
