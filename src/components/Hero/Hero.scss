@@ -40,10 +40,15 @@
 	.bio {
 		margin-top: 2rem;
 		color: $gray;
-		max-width: 496px;
-		min-width: 496px;
+		@include breakpoint(lg) {
+			max-width: 496px;
+			min-width: 496px;
+		}
 		@include breakpoint(sm) {
 			min-width: 100%;
+		}
+		@include breakpoint(md) {
+			max-width: 400px;
 		}
 	}
 
@@ -65,6 +70,7 @@
 				align-items: center;
 				gap: 1rem;
 				cursor: pointer;
+				width: fit-content;
 				a {
 					color: $gray;
 					text-decoration: none;

@@ -18,6 +18,7 @@
 		max-width: 536px;
 		padding: 16px;
 		overflow-x: hidden;
+		margin-top: 0;
 	}
 	@include breakpoint(sm) {
 		max-width: 100%;
@@ -49,6 +50,7 @@
 		display: flex;
 		transition: all 200ms ease-in-out;
 		position: relative;
+		align-items: center;
 		cursor: pointer;
 		&:hover {
 			transform: scale(1.07);
@@ -72,14 +74,15 @@
 		.project-content {
 			display: flex;
 			flex-direction: column;
-			justify-content: center;
 			gap: 1rem;
 			max-width: 584px;
+			justify-content: center;
 			.project-build {
 				font-size: 12px;
 				text-transform: uppercase;
-				font-weight: 700;
+				font-weight: 600;
 				letter-spacing: 1px;
+
 				@include breakpoint(sm) {
 					font-size: 0.6em;
 				}
@@ -93,6 +96,7 @@
 			.project-description {
 				color: $gray;
 				font-size: 16px;
+
 				@include breakpoint(sm) {
 					width: 100%;
 				}
@@ -101,7 +105,7 @@
 				display: flex;
 				gap: 1rem;
 				align-items: center;
-				margin-top: 1rem;
+				// margin-top: 1rem;
 				a {
 					color: $silk;
 					text-decoration: none;
