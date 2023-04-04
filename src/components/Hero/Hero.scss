@@ -69,6 +69,19 @@
 					color: $gray;
 					text-decoration: none;
 				}
+				&:hover {
+					a,
+					.number {
+						color: $silk;
+					}
+					.short-line {
+						display: block;
+						width: 85px;
+						height: 1px;
+						background-color: $silk;
+						transition: width 0.3s ease-in-out;
+					}
+				}
 				.number {
 					max-width: 20px;
 					min-width: 20px;
