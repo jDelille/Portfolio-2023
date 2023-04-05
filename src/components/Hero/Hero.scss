@@ -6,8 +6,10 @@
 	max-width: 496px;
 	min-width: 496px;
 	height: 90vh;
-	padding: 45px;
+
 	position: relative;
+	padding: 80px 45px;
+	max-height: 1200px;
 	@include breakpoint(md) {
 		padding: 16px;
 		max-width: 100%;
@@ -21,6 +23,7 @@
 	h1 {
 		font-size: 56px;
 		font-weight: 800;
+		letter-spacing: 2px;
 		@include breakpoint(md) {
 			font-size: 46px;
 		}
@@ -33,23 +36,24 @@
 		font-size: 32px;
 		margin-top: 0.75rem;
 		@include breakpoint(sm) {
-			font-size: 20px;
+			font-size: 22px;
 		}
 	}
 
 	.bio {
 		margin-top: 2rem;
 		color: $gray;
-		line-height: 25px;
+		line-height: $lineHeightLG;
 		@include breakpoint(lg) {
 			max-width: 496px;
 			min-width: 496px;
 		}
-		@include breakpoint(sm) {
-			min-width: 100%;
-		}
 		@include breakpoint(md) {
 			max-width: 400px;
+		}
+		@include breakpoint(sm) {
+			min-width: 100%;
+			line-height: $lineHeightSM;
 		}
 	}
 
@@ -75,6 +79,24 @@
 				a {
 					color: $gray;
 					text-decoration: none;
+
+					display: flex;
+					align-items: center;
+					gap: 1rem;
+					.extended-line {
+						display: block;
+						width: 85px;
+						height: 1px;
+						background-color: $silk;
+						transition: width 0.3s ease-in-out;
+					}
+					.short-line {
+						display: block;
+						width: 50px;
+						height: 1px;
+						background-color: $gray;
+						transition: width 0.3s ease-in-out;
+					}
 				}
 				&:hover {
 					a,
@@ -97,20 +119,6 @@
 					justify-content: center;
 					color: $gray;
 				}
-				.extended-line {
-					display: block;
-					width: 85px;
-					height: 1px;
-					background-color: $silk;
-					transition: width 0.3s ease-in-out;
-				}
-				.short-line {
-					display: block;
-					width: 50px;
-					height: 1px;
-					background-color: $gray;
-					transition: width 0.3s ease-in-out;
-				}
 			}
 			.active-nav-link {
 				a,
@@ -131,6 +139,7 @@
 		align-items: center;
 		position: absolute;
 		bottom: 2rem;
+		padding-top: 2rem;
 		@include breakpoint(sm) {
 			position: relative;
 			margin-top: 4rem;

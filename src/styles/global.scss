@@ -41,7 +41,7 @@ ul li {
 .App {
 	display: flex;
 	justify-content: center;
-	padding: 32px 0;
+	// padding: 32px 0;
 	position: relative;
 	@include breakpoint(md) {
 		padding: 16px;

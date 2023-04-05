@@ -12,6 +12,7 @@
 	position: relative;
 	height: fit-content;
 	transition: all 200ms ease-in-out;
+	padding-bottom: 80px;
 	@include breakpoint(md) {
 		min-width: 536px;
 		max-width: 536px;
@@ -47,6 +48,17 @@
 				color: $gray;
 				padding: 10px 0px;
 				font-size: 16px;
+				transition: all 200ms ease-in-out;
+				&:focus {
+					border-bottom: 1px solid $honey;
+					transition: all 200ms ease-in-out;
+					&::placeholder {
+						color: transparent;
+					}
+				}
+				&:not(:placeholder-shown) {
+					border-bottom: 1px solid $honey;
+				}
 			}
 			textarea {
 				min-height: 160px;
@@ -57,13 +69,16 @@
 			max-width: 40%;
 			padding: 15px 30px;
 			background: none;
-			color: $honey;
-			border: 1px solid $honey;
+			color: $silk;
+			background-color: $lead;
 			cursor: pointer;
 			position: relative;
 			font-weight: 600;
 			font-size: 16px;
 			border-radius: 4px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 			&:hover {
 				box-shadow: $honey 0px 2px 8px 0px;
 			}

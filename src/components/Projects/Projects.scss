@@ -7,18 +7,20 @@
 	min-width: 736px;
 	margin-left: auto;
 	display: flex;
-	margin-top: 45px;
+	// margin-top: 45px;
 	flex-direction: column;
 	gap: 0.5rem;
 	position: relative;
 	height: fit-content;
 	transition: all 200ms ease-in-out;
+	top: 80px;
 	@include breakpoint(md) {
 		min-width: 536px;
 		max-width: 536px;
 		padding: 16px;
 		overflow-x: hidden;
 		margin-top: 0;
+		top: 0;
 	}
 	@include breakpoint(sm) {
 		max-width: 100%;
@@ -36,6 +38,7 @@
 		top: 0;
 		right: 0;
 		transition: all 200ms ease-in-out;
+
 		@include breakpoint(sm) {
 			max-width: 100%;
 			min-width: 100%;
