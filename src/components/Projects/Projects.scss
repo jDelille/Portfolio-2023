@@ -53,7 +53,7 @@
 		align-items: center;
 		cursor: pointer;
 		&:hover {
-			transform: scale(1.07);
+			transform: scale(1.07) !important;
 			transition: all 200ms ease-in-out;
 			box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px;
 			z-index: 9999;
@@ -68,7 +68,7 @@
 			height: 250px;
 			padding: 16px;
 			&:hover {
-				transform: none;
+				transform: none !important;
 			}
 		}
 		.project-content {

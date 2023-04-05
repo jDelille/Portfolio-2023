@@ -40,6 +40,7 @@
 	.bio {
 		margin-top: 2rem;
 		color: $gray;
+		line-height: 25px;
 		@include breakpoint(lg) {
 			max-width: 496px;
 			min-width: 496px;
@@ -79,6 +80,7 @@
 					a,
 					.number {
 						color: $silk;
+						// color: $honey;
 					}
 					.short-line {
 						display: block;
@@ -151,6 +153,23 @@
 			@include breakpoint(sm) {
 				gap: 7px;
 				margin: 15px;
+			}
+			&:hover {
+				color: $honey;
+				svg {
+					color: $honey;
+				}
+
+				.github-icon {
+					fill: $honey;
+				}
+				.linkedin-icon {
+					path {
+						&:nth-child(1) {
+							fill: $honey;
+						}
+					}
+				}
 			}
 			p {
 				font-size: 14px;

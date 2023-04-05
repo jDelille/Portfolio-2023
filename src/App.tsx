@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
 import Hero from "./components/Hero/Hero";
+import Modal from "./components/Modal/Modal";
 import Projects from "./components/Projects/Projects";
 
 function App() {
@@ -55,6 +56,7 @@ function App() {
           <Contact sectionRef={sectionRefs.contact} />
         </div>
       </div>
+      {/* <Modal /> */}
     </div>
   );
 }

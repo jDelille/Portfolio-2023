@@ -79,6 +79,7 @@ export default function Projects({ sectionRef }: ProjectsProps) {
               )}
             </div>
 
+
             {/* <div className="project-links">
               
               <a href={project.site} target="_blank">View Site</a>
