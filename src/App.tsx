@@ -3,6 +3,8 @@ import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
 import Hero from "./components/Hero/Hero";
 import Projects from "./components/Projects/Projects";
+import SimpleBar from 'simplebar-react';
+import 'simplebar-react/dist/simplebar.min.css';
 
 function App() {
   const [activeLink, setActiveLink] = useState("projects");
@@ -44,7 +46,7 @@ function App() {
   }, [scrollPosition, sectionRefs]);
 
   return (
-    <div className="App">
+    <SimpleBar className="App">
       <div className="layout">
         <div className="fixed">
           <Hero onSetActiveLink={handleSetActiveLink} activeLink={activeLink} />
@@ -56,7 +58,7 @@ function App() {
         </div>
       </div>
       {/* <Modal /> */}
-    </div>
+    </SimpleBar>
   );
 }
 
