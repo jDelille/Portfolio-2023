@@ -46,7 +46,7 @@ function App() {
   }, [scrollPosition, sectionRefs]);
 
   return (
-    <SimpleBar className="App">
+    <div className="App">
       <div className="layout">
         <div className="fixed">
           <Hero onSetActiveLink={handleSetActiveLink} activeLink={activeLink} />
@@ -58,7 +58,7 @@ function App() {
         </div>
       </div>
       {/* <Modal /> */}
-    </SimpleBar>
+    </div>
   );
 }
 
