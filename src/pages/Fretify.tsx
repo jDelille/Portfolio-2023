@@ -1,12 +1,14 @@
 import { Link } from 'react-router-dom';
 import Loader from '../components/Loader/Loader';
+import SimpleBar from 'simplebar-react';
+import 'simplebar-react/dist/simplebar.min.css';
 import './Page.scss';
 
 export default function Fretify() {
  return (
   <>
    <Loader backgroundColor='#3D5AF1' />
-   <div className='fretify'>
+   <SimpleBar className='fretify'>
     <nav className='nav'>
      <div className="nav-wrapper">
       <Link to='/'>Back home </Link>
@@ -51,15 +53,13 @@ export default function Fretify() {
         <h2>Purpose</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, veniam non quidem doloribus autem voluptatem maxime dolor facilis voluptate, impedit saepe laudantium accusamus in dolorum cum assumenda molestiae deserunt eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, veniam non quidem doloribus autem voluptatem maxime dolor facilis voluptate, impedit saepe laudantium accusamus in dolorum cum assumenda molestiae deserunt eaque.</p>
        </div>
-       <div className="build">
+       {/* <div className="build">
         <h2>Build</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, veniam non quidem doloribus autem voluptatem maxime dolor facilis voluptate, impedit saepe laudantium accusamus in dolorum cum assumenda molestiae deserunt eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, veniam non quidem doloribus autem voluptatem maxime dolor facilis voluptate, impedit saepe laudantium accusamus in dolorum cum assumenda molestiae deserunt eaque.</p>
-       </div>
+
+       </div> */}
       </div>
       <div className="site-images">
        <img src="../images/fretify.png" alt="" />
-
-
       </div>
      </div>
 
@@ -69,7 +69,7 @@ export default function Fretify() {
     <footer>
 
     </footer>
-   </div>
+   </SimpleBar>
   </>
 
  );

@@ -1,12 +1,14 @@
 import { Link } from 'react-router-dom';
 import Loader from '../components/Loader/Loader';
+import SimpleBar from 'simplebar-react';
+import 'simplebar-react/dist/simplebar.min.css';
 import './Page.scss';
 
 export default function NPM() {
  return (
   <>
    <Loader backgroundColor='#c62b2e' />
-   <div className='fretify'>
+   <SimpleBar className='fretify'>
     <nav className='nav'>
      <div className="nav-wrapper">
       <Link to='/'>Back home </Link>
@@ -69,7 +71,7 @@ export default function NPM() {
     <footer>
 
     </footer>
-   </div>
+   </SimpleBar>
   </>
 
  );

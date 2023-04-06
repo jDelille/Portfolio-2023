@@ -1,12 +1,14 @@
 import { Link } from 'react-router-dom';
 import Loader from '../components/Loader/Loader';
+import SimpleBar from 'simplebar-react';
+import 'simplebar-react/dist/simplebar.min.css';
 import './Page.scss';
 
 export default function Muunifi() {
  return (
   <>
    <Loader backgroundColor='#7367FE' />
-   <div className='fretify'>
+   <SimpleBar className='fretify'>
     <nav className='nav'>
      <div className="nav-wrapper">
       <Link to='/'>Back home </Link>
@@ -67,7 +69,7 @@ export default function Muunifi() {
     <footer>
 
     </footer>
-   </div>
+   </SimpleBar>
   </>
 
  );
