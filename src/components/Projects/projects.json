@@ -8,7 +8,8 @@
    "site": "https://fretify.netlify.app/",
    "repo": "https://github.com/jDelille/fretify",
    "image": "../public/images/vibro-light.png",
-   "npm": false
+   "npm": false,
+   "link": "fretify"
   },
   {
    "id": 1,
@@ -18,7 +19,8 @@
    "site": "",
    "repo": "",
    "image": "../public/images/vibro-light.png",
-   "npm": false
+   "npm": false,
+   "link": "muunifi"
   },
   {
    "id": 2,
@@ -28,7 +30,8 @@
    "site": "https://www.npmjs.com/package/jd-react-select",
    "repo": "https://github.com/jDelille/react-select",
    "image": "../public/images/vibro-light.png",
-   "npm": true
+   "npm": true,
+   "link": "jd-react-select"
   }
  ]
 }

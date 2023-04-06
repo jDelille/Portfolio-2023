@@ -1,0 +1,64 @@
+/* First loader */
+.loader-1 {
+	height: 100vh;
+	width: 100vw;
+	position: absolute;
+	overflow: hidden;
+	z-index: 9999;
+	top: 0;
+	// animation: hide-loader 1.6s forwards;
+	animation: expand-loader-1 1.6s forwards;
+}
+
+/* First loader animation */
+@keyframes expand-loader-1 {
+	0% {
+		width: 100vw;
+		left: 0;
+	}
+	25% {
+		width: 100vw;
+		animation-fill-mode: forwards;
+	}
+	50% {
+		width: 100vw;
+		animation-fill-mode: forwards;
+	}
+	100% {
+		width: 0;
+		right: 0;
+		display: none;
+	}
+}
+
+/* Second loader animation */
+@keyframes expand-loader-2 {
+	0% {
+		width: 0;
+		left: 0;
+	}
+	25% {
+		width: 100vw;
+		animation-fill-mode: forwards;
+		left: 0;
+	}
+	50% {
+		width: 100vw;
+		animation-fill-mode: forwards;
+		right: 0;
+	}
+	100% {
+		width: 0;
+		right: 0;
+		display: none;
+	}
+}
+
+@keyframes hide-loader {
+	0% {
+	}
+
+	100% {
+		z-index: -1;
+	}
+}

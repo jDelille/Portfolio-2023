@@ -1,6 +1,7 @@
 import gsap from 'gsap';
 import { RefObject, useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { projects } from './projects.json';
+import { Link } from 'react-router-dom';
 
 import './Projects.scss';
 
@@ -56,7 +57,8 @@ export default function Projects({ sectionRef }: ProjectsProps) {
     <section className="projects" id="projects">
       {isAnyProjectHovered && <div className="overlay"></div>}
       {projects.map((project, i) => (
-        <div
+        <Link
+          to={project.link}
           className={`project ${hoveredProject === i ? 'hovered' : ''}`}
           onMouseEnter={() => handleProjectHover(i)}
           onMouseLeave={handleProjectLeave}
@@ -86,7 +88,7 @@ export default function Projects({ sectionRef }: ProjectsProps) {
               {!project.npm && <a href={project.repo} target="_blank">Source Code</a>}
             </div> */}
           </div>
-        </div>
+        </Link>
       ))}
     </section>
   );

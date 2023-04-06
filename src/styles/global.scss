@@ -38,6 +38,11 @@ ul li {
 	list-style-type: none;
 }
 
+a {
+	text-decoration: none;
+	color: $silk;
+}
+
 .App {
 	display: flex;
 	justify-content: center;
