@@ -1,7 +1,42 @@
 @import '../../styles/variables';
 @import '../../styles/breakpoints';
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,500&display=swap');
 
 footer {
 	height: 350px;
 	background-color: $lead;
+	.footer-content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+		.links {
+			padding: 2rem 0;
+			display: flex;
+			gap: 1rem;
+			font-weight: 600;
+			.site-link {
+				&:hover {
+					text-decoration: underline;
+					text-decoration-thickness: 2px;
+					text-decoration-color: $honey;
+				}
+			}
+		}
+		.copyright {
+			font-family: 'Bitter', serif;
+			font-size: 14px;
+			padding-bottom: 2rem;
+		}
+		.scroll-to-top {
+			padding: 0;
+			&:hover {
+				text-decoration: underline;
+				text-decoration-thickness: 2px;
+				text-decoration-color: $honey;
+			}
+			cursor: pointer;
+		}
+	}
 }

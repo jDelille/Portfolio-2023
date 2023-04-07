@@ -1,5 +1,9 @@
-import React, { useLayoutEffect, useRef } from "react";
-import { createParagraphAnimation, createScrollTrigger, createTitleAnimation } from "../Animations/Animations";
+import React, { useLayoutEffect, useRef } from 'react';
+import {
+ createParagraphAnimation,
+ createScrollTrigger,
+ createTitleAnimation,
+} from '../Animations/Animations';
 import { projects } from '../Projects/projects.json';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
@@ -9,11 +13,13 @@ import './ProjectDescription.scss';
 
 type ProjectDescriptionProps = {
  index: number;
- app: React.RefObject<HTMLElement>
+ app: React.RefObject<HTMLElement>;
 };
 
-export default function ProjectDescription({ index, app }: ProjectDescriptionProps) {
-
+export default function ProjectDescription({
+ index,
+ app,
+}: ProjectDescriptionProps) {
  const titleRef = useRef(null);
  const paragraphRef = useRef(null);
  const buttonRef = useRef(null);
@@ -26,8 +32,7 @@ export default function ProjectDescription({ index, app }: ProjectDescriptionPro
   if (contactContainer) {
    contactContainer.scrollIntoView({ behavior: 'smooth' });
   }
- }
-
+ };
 
  const project = projects[index];
  const {
@@ -35,7 +40,7 @@ export default function ProjectDescription({ index, app }: ProjectDescriptionPro
   projectBackgroundText,
   projectIntro,
   projectWebsiteLink,
-  npm
+  npm,
  } = project;
 
  useLayoutEffect(() => {
@@ -57,24 +62,34 @@ export default function ProjectDescription({ index, app }: ProjectDescriptionPro
   ScrollTrigger.refresh();
  }, []);
 
- return <div
-  className='project-description'
-  style={{ background: projectColor }}>
-  <div className='description-wrapper'>
-   <h2 className='background-text'>{projectBackgroundText}</h2>
-   <h1 className='intro-text' id='title' ref={titleRef}>
-    Introduction
-   </h1>
-   <p id='paragraph' ref={paragraphRef}>
-    {projectIntro}
-   </p>
-   {projectWebsiteLink ? (
-    <a href={projectWebsiteLink} target="_blank" ref={buttonRef} className="website-link">{npm ? 'View Documentation' : 'Visit Website'}</a>
-
-   ) : (
-    <a href='#contact' onClick={handleNoLinkClick} ref={buttonRef} className="website-link no-link">Can demo upon request</a>
-
-   )}
+ return (
+  <div className='project-description' style={{ background: projectColor }}>
+   <div className='description-wrapper'>
+    <h2 className='background-text'>{projectBackgroundText}</h2>
+    <h1 className='intro-text' id='title' ref={titleRef}>
+     Introduction
+    </h1>
+    <p id='paragraph' ref={paragraphRef}>
+     {projectIntro}
+    </p>
+    {projectWebsiteLink ? (
+     <a
+      href={projectWebsiteLink}
+      target='_blank'
+      ref={buttonRef}
+      className='website-link'>
+      {npm ? 'View Documentation' : 'Visit Website'}
+     </a>
+    ) : (
+     <a
+      href='#contact'
+      onClick={handleNoLinkClick}
+      ref={buttonRef}
+      className='website-link no-link'>
+      Can demo upon request
+     </a>
+    )}
+   </div>
   </div>
- </div>
+ );
 }
