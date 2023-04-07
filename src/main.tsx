@@ -7,9 +7,7 @@ import {
   Link,
 } from "react-router-dom";
 import App from './App'
-import Fretify from './pages/Fretify';
-import Muunifi from './pages/Muunifi';
-import NPM from './pages/NPM';
+import Project from './pages/Project';
 import './styles/global.scss'
 
 const router = createBrowserRouter([
@@ -22,19 +20,19 @@ const router = createBrowserRouter([
   {
     path: "fretify",
     element: (
-      <Fretify />
+      <Project index={0} />
     ),
   },
   {
     path: "muunifi",
     element: (
-      <Muunifi />
+      <Project index={1} />
     ),
   },
   {
     path: "jd-react-select",
     element: (
-      <NPM />
+      <Project index={2} />
     ),
   },
 ]);

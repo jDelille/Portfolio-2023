@@ -14,6 +14,7 @@ import { Select } from 'jd-react-select';
 import '@/../jd-react-select/dist/components/Select.css';
 import { SelectOption } from '@/../jd-react-select/dist/components/Select';
 import './Page.scss';
+import Footer from '../components/Footer/Footer';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -209,7 +210,7 @@ export default function Muunifi() {
           </div>
 
         </a>
-        <footer></footer>
+        <Footer />
       </div>
     </>
   );

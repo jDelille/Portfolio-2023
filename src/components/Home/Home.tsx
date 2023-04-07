@@ -2,14 +2,14 @@ import Navbar from '../Navbar/Navbar';
 import External from '../../icons/External';
 import GithubIcon from '../../icons/GithubIcon';
 import LinkedinIcon from '../../icons/LinkedinIcon';
-import './Hero.scss';
+import './Home.scss';
 
-type HeroProps = {
+type HomeProps = {
  onSetActiveLink: (link: string) => void;
  activeLink: string;
 };
 
-export default function Hero({ onSetActiveLink, activeLink }: HeroProps) {
+export default function Home({ onSetActiveLink, activeLink }: HomeProps) {
 
  return (
   <section className='hero'>

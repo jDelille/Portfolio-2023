@@ -9,7 +9,21 @@
    "repo": "https://github.com/jDelille/fretify",
    "image": "../public/images/vibro-light.png",
    "npm": false,
-   "link": "fretify"
+   "link": "fretify",
+   "projectName": "Fretify",
+   "projectBio": "Interactive Guitar Fretboard Website",
+   "projectImageSmall": "../images/fretify-laptop.png",
+   "projectRole": "Front-End Developer",
+   "projectContext": "Personal Project",
+   "projectPeriod": "2023",
+   "projectBackgroundText": "FRETIFY",
+   "projectIntro": "Fretify is an interactive guitar fretboard website. Learn over 50 scales down the neck in every key and 'almost' every tuning. (more coming soon...). View on your browser or on the go on your mobile device, thanks to its user friendly mobile UI.",
+   "projectPurpose": "Being a guitar playing who loves to learn more about what I'm doing when I play music, I spend a lot of time looking at scale charts to become more familiar with the fretboard. I was tired of looking at old PNG files on the web to learn scales so I decided to take matters into my own hands, thus Fretify was born. Not only did it help me become a better guitarist, but it helped me become a better developer by creating the website with the best technologies and best practices.",
+   "projectBuild": "Fretify was built using React, TypeScript, SCSS, MobX, Tone.js and Tonal.js. I felt this was a good enough choice of technology for this site since it is pretty minimalist. However, I plan on expanding this project in the future. I want to incorportate Firebase so I can create user profiles and a community chat board where users can discuss everything guitar. I also want to use Next.js to handling routing and server side rendering.",
+   "projectImageLarge": "../images/fretify.png",
+   "nextProject": "Muunifi",
+   "nextProjectLink": "/muunifi",
+   "projectColor": "#3D5AF1"
   },
   {
    "id": 1,
@@ -20,7 +34,21 @@
    "repo": "",
    "image": "../public/images/vibro-light.png",
    "npm": false,
-   "link": "muunifi"
+   "link": "muunifi",
+   "projectName": "Muunifi",
+   "projectBio": "Social platform built for financial communities",
+   "projectImageSmall": "../images/muunifi-laptop.png",
+   "projectRole": "Front-End Developer",
+   "projectContext": "Professional",
+   "projectPeriod": "2023",
+   "projectBackgroundText": "MUUNIFI",
+   "projectIntro": "Lato aims to be a modern, solid and easy-to-use web-based software to manage content. With its intuitive dashboard and hand-crafted UI, Lato helps every customer to easily manage every kind of content he/she needs.",
+   "projectPurpose": "Being a guitar playing who loves to learn more about what I'm doing when I play music, I spend a lot of time looking at scale charts to become more familiar with the fretboard. I was tired of looking at old PNG files on the web to learn scales so I decided to take matters into my own hands, thus Fretify was born. Not only did it help me become a better guitarist, but it helped me become a better developer by creating the website with the best technologies and best practices.",
+   "projectBuild": "Fretify was built using React, TypeScript, SCSS, MobX, Tone.js and Tonal.js. I felt this was a good enough choice of technology for this site since it is pretty minimalist. However, I plan on expanding this project in the future. I want to incorportate Firebase so I can create user profiles and a community chat board where users can discuss everything guitar. I also want to use Next.js to handling routing and server side rendering.",
+   "projectImageLarge": "../images/muunifi.png",
+   "nextProject": "jd-react-select",
+   "nextProjectLink": "/jd-react-select",
+   "projectColor": "#7367FE"
   },
   {
    "id": 2,
@@ -31,7 +59,21 @@
    "repo": "https://github.com/jDelille/react-select",
    "image": "../public/images/vibro-light.png",
    "npm": true,
-   "link": "jd-react-select"
+   "link": "jd-react-select",
+   "projectName": "jd-react-select",
+   "projectBio": "A reusable, lightweight, and easy to use react select component.",
+   "projectImageSmall": "../images/muunifi-laptop.png",
+   "projectRole": "Front-End Developer",
+   "projectContext": "Personal Project",
+   "projectPeriod": "2023",
+   "projectBackgroundText": "SELECT",
+   "projectIntro": "jd-react-select aims to be a lightweight, reusable and easy-to-use react select-component. With its customizable props and styles, jd-react-select is a great choice for developers who want a reusable select component that provides consistent functionality and styles in their projects.",
+   "projectPurpose": "I decided to create jd-react-select as a way to teach myself how to write better TypeScript and better reusable components that can be easily integrated into any project. Additionally, building this package allowed me to get familiar with how to create packages, write good documentation, and help other developers who might be looking for a high-quality, customizable, and easy-to-use select component for their projects.",
+   "projectBuild": "This package was built using TypeScript and React. I decided to keep this package lightweight and not include any more dependencies. The styling for this package is done using SCSS, although it is quite minimal. I wanted to start people off with a simple and clean select component design, and leave the rest up to them!",
+   "projectImageLarge": "../images/muunifi.png",
+   "nextProject": "Fretify",
+   "nextProjectLink": "/fretify",
+   "projectColor": "#c62b2e"
   }
  ]
 }

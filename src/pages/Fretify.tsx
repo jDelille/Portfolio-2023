@@ -8,9 +8,9 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
 import { Link } from 'react-router-dom';
 import Loader from '../components/Loader/Loader';
-import { useIntersection } from 'react-use';
 import './Page.scss';
 import ArrowIcon from '../icons/ArrowIcon';
+import Footer from '../components/Footer/Footer';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -144,10 +144,7 @@ export default function Fretify() {
               Introduction
             </h1>
             <p id='paragraph' ref={paragraphRef}>
-              Lato aims to be a modern, solid and easy-to-use web-based software
-              to manage content. With its intuitive dashboard and hand-crafted
-              UI, Lato helps every customer to easily manage every kind of
-              content he/she needs.
+              Fretify is an interactive guitar fretboard website. Learn over 50 scales down the neck in every key and 'almost' every tuning. (more coming soon...). View on your browser or on the go on your mobile device, thanks to its user friendly mobile UI.
             </p>
             <button ref={buttonRef}>Vist Website</button>
           </div>
@@ -158,14 +155,13 @@ export default function Fretify() {
               <div className='purpose' ref={purposeRef}>
                 <h2>Purpose</h2>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt,
-                  veniam non quidem doloribus autem voluptatem maxime dolor
-                  facilis voluptate, impedit saepe laudantium accusamus in
-                  dolorum cum assumenda molestiae deserunt eaque. Lorem ipsum
-                  dolor sit amet consectetur adipisicing elit. Sunt, veniam non
-                  quidem doloribus autem voluptatem maxime dolor facilis
-                  voluptate, impedit saepe laudantium accusamus in dolorum cum
-                  assumenda molestiae deserunt eaque.
+                  Being a guitar playing who loves to learn more about what I'm doing when I play music, I spend a lot of time looking at scale charts to become more familiar with the fretboard. I was tired of looking at old PNG files on the web to learn scales so I decided to take matters into my own hands, thus Fretify was born. Not only did it help me become a better guitarist, but it helped me become a better developer by creating the website with the best technologies and best practices.
+                </p>
+              </div>
+              <div className='build' ref={purposeRef}>
+                <h2>Build</h2>
+                <p>
+                  Fretify was built using React, TypeScript, SCSS, MobX, Tone.js and Tonal.js. I felt this was a good enough choice of technology for this site since it is pretty minimalist. However, I plan on expanding this project in the future. I want to incorportate Firebase so I can create user profiles and a community chat board where users can discuss everything guitar. I also want to use Next.js to handling routing and server side rendering.
                 </p>
               </div>
             </div>
@@ -187,7 +183,7 @@ export default function Fretify() {
           </div>
 
         </a>
-        <footer></footer>
+        <Footer />
       </div>
     </>
   );
