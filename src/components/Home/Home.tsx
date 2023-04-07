@@ -26,16 +26,16 @@ export default function Home({ onSetActiveLink, activeLink }: HomeProps) {
 
    <div className='extra-content'>
     <img src='../images/me.jpg' alt='' />
-    <div className='linkedin'>
+    <a href='https://www.linkedin.com/in/justin-delille/' target="_blank" className='linkedin'>
      <LinkedinIcon />
      <p>Linkedin</p>
      <External />
-    </div>
-    <div className='github'>
+    </a>
+    <a href='https://github.com/jDelille' target='_blank' className='github'>
      <GithubIcon />
      <p>Github</p>
      <External />
-    </div>
+    </a>
    </div>
   </section>
  );

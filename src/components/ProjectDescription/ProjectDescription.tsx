@@ -3,6 +3,8 @@ import { createParagraphAnimation, createScrollTrigger, createTitleAnimation } f
 import { projects } from '../Projects/projects.json';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
+import { useNavigate } from 'react-router-dom';
+
 import './ProjectDescription.scss';
 
 type ProjectDescriptionProps = {
@@ -16,11 +18,22 @@ export default function ProjectDescription({ index, app }: ProjectDescriptionPro
  const paragraphRef = useRef(null);
  const buttonRef = useRef(null);
 
+ const navigate = useNavigate();
+
+ const handleNoLinkClick = () => {
+  navigate('/#contact');
+  const contactContainer = document.getElementById('contact');
+  contactContainer.scrollIntoView({ behavior: 'smooth' });
+ }
+
+
  const project = projects[index];
  const {
   projectColor,
   projectBackgroundText,
   projectIntro,
+  projectWebsiteLink,
+  npm
  } = project;
 
  useLayoutEffect(() => {
@@ -53,7 +66,13 @@ export default function ProjectDescription({ index, app }: ProjectDescriptionPro
    <p id='paragraph' ref={paragraphRef}>
     {projectIntro}
    </p>
-   <button ref={buttonRef}>Vist Website</button>
+   {projectWebsiteLink ? (
+    <a href={projectWebsiteLink} target="_blank" ref={buttonRef} className="website-link">{npm ? 'View Documentation' : 'Visit Website'}</a>
+
+   ) : (
+    <a href='#contact' onClick={handleNoLinkClick} ref={buttonRef} className="website-link no-link">Can demo upon request</a>
+
+   )}
   </div>
  </div>
 }

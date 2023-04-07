@@ -24,7 +24,8 @@
    "nextProject": "Muunifi",
    "nextProjectLink": "/muunifi",
    "projectColor": "#3D5AF1",
-   "nextIsNPM": false
+   "nextIsNPM": false,
+   "projectWebsiteLink": "https://fretify.netlify.app/"
   },
   {
    "id": 1,
@@ -76,7 +77,8 @@
    "nextProject": "Fretify",
    "nextProjectLink": "/fretify",
    "projectColor": "#c62b2e",
-   "nextIsNPM": false
+   "nextIsNPM": false,
+   "projectWebsiteLink": "https://www.npmjs.com/package/jd-react-select"
   }
  ]
 }

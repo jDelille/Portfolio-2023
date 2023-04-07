@@ -83,12 +83,18 @@
 			font-size: 16px;
 		}
 	}
-	button {
+	.website-link {
 		all: unset;
 		border: 1px solid $silk;
 		color: $silk;
 		font-weight: 500;
 		padding: 10px 30px;
 		margin-top: 2rem;
+		position: relative;
+		z-index: 9999;
+		cursor: pointer;
+	}
+	.no-link {
+		cursor: pointer;
 	}
 }
