@@ -28,17 +28,18 @@
 	width: 100vw;
 	position: relative;
 	height: 100vh;
-	overflow-x: hidden;
 	.hero {
 		background-color: $mattBlack;
-		min-width: 100vw;
-		height: 83vh;
+		width: 100vw;
+		max-width: 100%;
+		height: 82vh;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		.hero-content {
 			display: flex;
 			align-items: center;
+			justify-content: center;
 			gap: 4rem;
 			margin-bottom: 6rem;
 			width: 1400px;
@@ -46,14 +47,12 @@
 			@include breakpoint(md) {
 				max-width: 1100px;
 			}
-			display: flex;
-			align-items: center;
-			justify-content: center;
 
 			.text {
 				display: flex;
 				flex-direction: column;
 				gap: 1rem;
+
 				@include breakpoint(sm) {
 					align-items: center;
 					text-align: center;
@@ -92,12 +91,14 @@
 				justify-content: space-evenly;
 				text-transform: uppercase;
 				font-weight: 600;
+
 				@include breakpoint(md) {
 					padding: 0 2rem;
 				}
 
 				.info-wrapper {
 					width: 1400px;
+					max-width: 100%;
 					margin: 0 auto;
 					display: flex;
 					justify-content: space-evenly;
@@ -157,10 +158,12 @@
 			font-size: 300px;
 			font-weight: 900;
 			z-index: 1;
-			bottom: -40%;
+			bottom: -30%;
 			left: -8%;
 			opacity: 0.1;
-			width: 5000px;
+			max-height: 100%;
+
+			// width: 5000px;
 			@include breakpoint(md) {
 				left: -7.5%;
 			}
@@ -240,6 +243,7 @@
 			gap: 1rem;
 			padding: 0 2rem;
 			margin: 0 auto;
+
 			@include breakpoint(md) {
 				max-width: 1100px;
 				flex-direction: column;
@@ -322,8 +326,107 @@
 			}
 		}
 	}
-	footer {
+	.next-work-container {
+		width: 100%;
+		background-color: white;
+		color: $mattBlack;
+		display: block;
+		position: relative;
 		height: 200px;
-		background-color: $mattBlack;
+
+		&:after {
+			content: '';
+			position: absolute;
+			background-color: $mattBlack;
+			top: 0;
+			display: block;
+			width: 100%;
+			left: 0;
+			height: 100%;
+			transition: -webkit-transform 0.38s cubic-bezier(0.694, 0.048, 0.335, 1);
+			transition: transform 0.38s cubic-bezier(0.694, 0.048, 0.335, 1);
+			transition: transform 0.38s cubic-bezier(0.694, 0.048, 0.335, 1),
+				-webkit-transform 0.38s cubic-bezier(0.694, 0.048, 0.335, 1);
+			-webkit-transform: translateY(-100%);
+			transform: translateY(-100%);
+		}
+
+		&:hover:after {
+			height: 100%;
+			transform: translateY(0%);
+		}
+
+		&:hover > .wrapper {
+			color: $silk;
+			transition: all 200ms ease-in-out;
+		}
+
+		&:hover > .wrapper .arrow {
+			transform: translateX(50px);
+			transition: all 200ms ease-in-out;
+			transition-delay: 0.2s;
+		}
+
+		&:hover > .wrapper .arrow path {
+			fill: $silk;
+			transition-delay: 0.2s;
+		}
+
+		.wrapper {
+			width: 1400px;
+			margin: 0 auto;
+			height: 200px;
+			display: flex;
+			align-items: center;
+			padding: 2rem;
+			gap: 1rem;
+			position: relative;
+			z-index: 1;
+
+			.text {
+				height: 100%;
+				display: flex;
+				flex-direction: column;
+				gap: 1rem;
+				justify-content: center;
+				.label {
+					font-size: 18px;
+					font-family: 'Bitter', serif;
+					position: relative;
+					z-index: 2;
+					transition: all 200ms ease-in-out;
+				}
+
+				.project-link {
+					font-size: 3rem;
+					font-weight: 700;
+					position: relative;
+					z-index: 2;
+					transition: all 200ms ease-in-out;
+					text-decoration: underline;
+				}
+			}
+			.arrow {
+				margin-left: auto;
+				width: fit-content;
+				min-width: 25%;
+				height: 100%;
+				display: flex;
+				align-items: center;
+				transition: all 200ms ease-in-out;
+				transition-delay: 0.2s;
+
+				svg {
+					max-width: 30%;
+					path {
+						transition-delay: 0.2s;
+					}
+				}
+			}
+		}
+	}
+	footer {
+		height: 350px;
+		background-color: $lead;
 	}
 }

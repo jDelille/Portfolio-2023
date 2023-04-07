@@ -39,7 +39,7 @@ export default function NPM() {
     </div>
     <div className="project-description" style={{ background: '#c62b2e' }}>
      <div className="description-wrapper">
-      <h2 className='background-text'>REACT-SELECT</h2>
+      <h2 className='background-text'>SELECT</h2>
       <h1>Introduction</h1>
       <p>Lato aims to be a modern, solid and easy-to-use web-based software to manage content. With its intuitive dashboard and hand-crafted UI, Lato helps every customer to easily manage every kind of content he/she needs.</p>
       <button>Vist Website</button>
