@@ -41,7 +41,10 @@ export default function Project({ index }: ProjectProps) {
     $after.css('opacity', '1');
     setTimeout(function () {
 
-     window.location.href = $container.attr('href');
+     const href = $container.attr('href');
+     if (href !== undefined) {
+      window.location.href = href.toString();
+     }
     }, 1000);
    });
   }
