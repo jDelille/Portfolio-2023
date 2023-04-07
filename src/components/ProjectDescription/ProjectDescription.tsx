@@ -23,7 +23,9 @@ export default function ProjectDescription({ index, app }: ProjectDescriptionPro
  const handleNoLinkClick = () => {
   navigate('/#contact');
   const contactContainer = document.getElementById('contact');
-  contactContainer.scrollIntoView({ behavior: 'smooth' });
+  if (contactContainer) {
+   contactContainer.scrollIntoView({ behavior: 'smooth' });
+  }
  }
 
 
