@@ -17,6 +17,7 @@
 	@include breakpoint(sm) {
 		max-width: 100%;
 		height: fit-content;
+		padding: 0;
 	}
 
 	h1 {

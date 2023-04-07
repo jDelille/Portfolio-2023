@@ -21,6 +21,7 @@ export default function ProjectHero({ index, app }: ProjectHeroProps) {
   projectRole,
   projectContext,
   projectPeriod,
+  npm
  } = project;
 
  useLayoutEffect(() => {
@@ -35,7 +36,7 @@ export default function ProjectHero({ index, app }: ProjectHeroProps) {
   <div className='project-hero'>
    <div className='hero-content'>
     <div className='text'>
-     <h1 className='project-name npm-title'>{projectName}</h1>
+     <h1 className={npm ? 'npm-title' : 'project-name'}>{projectName}</h1>
      <p className='project-brief'>{projectBio}</p>
     </div>
 
@@ -50,8 +51,8 @@ export default function ProjectHero({ index, app }: ProjectHeroProps) {
        {projectRole}
       </p>
       <p className='info-two'>
-       <span style={{ color: projectColor }}>{projectContext}</span>
-       Professional
+       <span style={{ color: projectColor }}>Context</span>
+       {projectContext}
       </p>
       <p className='info-three'>
        <span style={{ color: projectColor }}>Period</span>

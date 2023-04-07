@@ -65,7 +65,7 @@ export default function ProjectDetails({ index, app }: ProjectDetailsProps) {
    </div>
 
    {npm ? (
-    <div className='site-images showcase'>
+    <div className='showcase'>
      <div className='select-wrapper'>
       <p>Try it out!</p>
       <Select

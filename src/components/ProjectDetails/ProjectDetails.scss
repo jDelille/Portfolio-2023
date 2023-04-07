@@ -35,6 +35,7 @@
 			max-width: 100%;
 			padding: unset;
 			margin: unset;
+			flex-direction: column;
 		}
 	}
 	.text {
@@ -99,7 +100,7 @@
 				margin-right: auto;
 			}
 			@include breakpoint(sm) {
-				width: 100%;
+				width: 98%;
 				padding: 0 1rem;
 				margin-right: auto;
 			}
@@ -120,6 +121,11 @@
 			// padding-top: 4rem;
 			padding: 0;
 			width: 40%;
+		}
+		@include breakpoint(sm) {
+			// padding-top: 4rem;
+			padding: 0;
+			width: 100%;
 		}
 		.select-wrapper {
 			height: 100%;

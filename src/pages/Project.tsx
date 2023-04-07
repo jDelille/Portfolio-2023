@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import { projects } from '../components/Projects/projects.json';
@@ -9,6 +9,8 @@ import ProjectDescription from '../components/ProjectDescription/ProjectDescript
 import ProjectDetails from '../components/ProjectDetails/ProjectDetails';
 import ProjectHero from '../components/ProjectHero/ProjectHero';
 import gsap from 'gsap';
+import $ from 'jquery';
+
 import './Project.scss';
 gsap.registerPlugin(ScrollTrigger);
 
@@ -16,11 +18,34 @@ type ProjectProps = {
  index: number;
 };
 
+
+
 export default function Project({ index }: ProjectProps) {
  const appRef = useRef<HTMLDivElement>(null);
 
  const project = projects[index];
- const { projectColor, nextProject, nextProjectLink } = project;
+ const { projectColor, nextProject, nextProjectLink, nextIsNPM } = project;
+
+
+ // function for next-container onclick animation for mobile devices.
+ useEffect(() => {
+  window.scrollTo(0, 0);
+
+  const screenWidth = window.innerWidth;
+  if (screenWidth <= 768) {
+   $('.next-work-container').on('click', function (e) {
+    e.preventDefault();
+    var $container = $(this);
+    var $after = $container.find('::after');
+
+    $after.css('opacity', '1');
+    setTimeout(function () {
+
+     window.location.href = $container.attr('href');
+    }, 1000);
+   });
+  }
+ }, []);
 
  return (
   <>
@@ -38,7 +63,7 @@ export default function Project({ index }: ProjectProps) {
      <div className='wrapper'>
       <div className='text'>
        <p className='label'>Next Work</p>
-       <p className='project-link'>{nextProject}</p>
+       <p className={nextIsNPM ? 'project-link-npm' : 'project-link'}>{nextProject}</p>
       </div>
       <div className='arrow'>
        <ArrowIcon />
@@ -46,7 +71,7 @@ export default function Project({ index }: ProjectProps) {
      </div>
     </a>
     <Footer />
-   </div>
+   </div >
   </>
  );
 }

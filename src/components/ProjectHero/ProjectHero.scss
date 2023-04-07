@@ -36,9 +36,10 @@
 				font-weight: 900;
 			}
 			p {
-				font-size: 20px;
+				font-size: 18px;
 				font-weight: 300;
 				font-family: 'Bitter', serif;
+				font-style: italic;
 			}
 			.npm-title {
 				@include breakpoint(sm) {
@@ -59,6 +60,7 @@
 			bottom: 0;
 			width: 100vw;
 			left: 0;
+			bottom: 98px;
 			height: 105px;
 			display: flex;
 			align-items: center;

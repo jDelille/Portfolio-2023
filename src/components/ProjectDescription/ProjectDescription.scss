@@ -41,6 +41,8 @@
 		max-height: 100%;
 		@include breakpoint(md) {
 			left: -5%;
+			max-width: 105%;
+			overflow: hidden;
 		}
 	}
 	@include breakpoint(md) {

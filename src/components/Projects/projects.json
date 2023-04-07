@@ -23,7 +23,8 @@
    "projectImageLarge": "../images/fretify.png",
    "nextProject": "Muunifi",
    "nextProjectLink": "/muunifi",
-   "projectColor": "#3D5AF1"
+   "projectColor": "#3D5AF1",
+   "nextIsNPM": false
   },
   {
    "id": 1,
@@ -42,13 +43,14 @@
    "projectContext": "Professional",
    "projectPeriod": "2023",
    "projectBackgroundText": "MUUNIFI",
-   "projectIntro": "Lato aims to be a modern, solid and easy-to-use web-based software to manage content. With its intuitive dashboard and hand-crafted UI, Lato helps every customer to easily manage every kind of content he/she needs.",
-   "projectPurpose": "Being a guitar playing who loves to learn more about what I'm doing when I play music, I spend a lot of time looking at scale charts to become more familiar with the fretboard. I was tired of looking at old PNG files on the web to learn scales so I decided to take matters into my own hands, thus Fretify was born. Not only did it help me become a better guitarist, but it helped me become a better developer by creating the website with the best technologies and best practices.",
-   "projectBuild": "Fretify was built using React, TypeScript, SCSS, MobX, Tone.js and Tonal.js. I felt this was a good enough choice of technology for this site since it is pretty minimalist. However, I plan on expanding this project in the future. I want to incorportate Firebase so I can create user profiles and a community chat board where users can discuss everything guitar. I also want to use Next.js to handling routing and server side rendering.",
+   "projectIntro": "Follow along, subscribe for exclusive access, create your own content or build your own community through Muunifi’s specific social financial tools. Muunifi is your source for all the greatest alpha, financial education, and latest news on what’s breaking and up-and-coming in markets.",
+   "projectPurpose": "Muunifi is a social platform created for people who want to get the latest and best financial advice from experts in the field. Muunifi is designed to overturn the existing socail media models and give power back to the users. Users will be able to share their own content and charge users for subscription level access to their content that is reserved for those in their inner circle.",
+   "projectBuild": "Muunifi was built using Next.js, React, TypeScript, MobX, Firebase, Axios, and many other great dependencies to keep the code consistent and production ready. The code is kept clean and easy to read thanks to the software design principle, 'Seperation of concerns'. This allowed the developers to separate different parts of a software system into distinct modules, each responsible for a specific set of functionalities. By doing this, each module can be developed, tested, and maintained independently, which can make the overall system more flexible, scalable, and maintainable.",
    "projectImageLarge": "../images/muunifi.png",
    "nextProject": "jd-react-select",
    "nextProjectLink": "/jd-react-select",
-   "projectColor": "#7367FE"
+   "projectColor": "#7367FE",
+   "nextIsNPM": true
   },
   {
    "id": 2,
@@ -73,7 +75,8 @@
    "projectImageLarge": "../images/muunifi.png",
    "nextProject": "Fretify",
    "nextProjectLink": "/fretify",
-   "projectColor": "#c62b2e"
+   "projectColor": "#c62b2e",
+   "nextIsNPM": false
   }
  ]
 }
