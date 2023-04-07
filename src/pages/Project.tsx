@@ -8,7 +8,8 @@ import Footer from '../components/Footer/Footer';
 import ProjectDescription from '../components/ProjectDescription/ProjectDescription';
 import ProjectDetails from '../components/ProjectDetails/ProjectDetails';
 import ProjectHero from '../components/ProjectHero/ProjectHero';
-import './Page.scss';
+import gsap from 'gsap';
+import './Project.scss';
 gsap.registerPlugin(ScrollTrigger);
 
 type ProjectProps = {
@@ -24,7 +25,7 @@ export default function Project({ index }: ProjectProps) {
  return (
   <>
    <Loader backgroundColor={projectColor} />
-   <div className='fretify' ref={appRef}>
+   <div className='project' ref={appRef}>
     <nav className='nav'>
      <div className='nav-wrapper'>
       <Link to='/'>Back home </Link>

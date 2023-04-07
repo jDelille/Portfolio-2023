@@ -6,6 +6,7 @@ import { Select } from 'jd-react-select';
 import '@/../jd-react-select/dist/components/Select.css';
 import { SelectOption } from '@/../jd-react-select/dist/components/Select';
 import { createDescriptionAnimation, createImageAnimation, createScrollTrigger } from "../Animations/Animations";
+import './ProjectDetails.scss';
 
 type ProjectDetailsProps = {
  index: number;

@@ -12,7 +12,7 @@ type HomeProps = {
 export default function Home({ onSetActiveLink, activeLink }: HomeProps) {
 
  return (
-  <section className='hero'>
+  <section className='home'>
    <h1>Justin Delille</h1>
    <h2>Front-End Web Developer</h2>
    <p className='bio'>

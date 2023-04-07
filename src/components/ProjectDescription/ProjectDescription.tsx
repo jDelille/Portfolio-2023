@@ -3,6 +3,7 @@ import { createParagraphAnimation, createScrollTrigger, createTitleAnimation } f
 import { projects } from '../Projects/projects.json';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
+import './ProjectDescription.scss';
 
 type ProjectDescriptionProps = {
  index: number;

@@ -48,7 +48,7 @@ export default function Navbar({ onSetActiveLink, activeLink }: NavbarProps) {
  };
  return (
   <Scrollspy items={sectionIds} currentClassName='is-active'>
-   <nav>
+   <nav className='navbar'>
     <ul>
      <li
       className={

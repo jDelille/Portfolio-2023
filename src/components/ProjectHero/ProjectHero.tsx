@@ -32,7 +32,7 @@ export default function ProjectHero({ index, app }: ProjectHeroProps) {
 
 
  return (
-  <div className='hero'>
+  <div className='project-hero'>
    <div className='hero-content'>
     <div className='text'>
      <h1 className='project-name npm-title'>{projectName}</h1>
