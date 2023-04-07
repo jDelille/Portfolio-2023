@@ -6,8 +6,10 @@ type LoaderProps = {
 
 export default function Loader({ backgroundColor }: LoaderProps) {
  return <>
-  <div className="loader-1" style={{ background: backgroundColor }}>
-   <div className="loader-2"></div>
+  <div id="loader" >
+
   </div>
+  <div id="loader-after"></div>
+
  </>
 }
