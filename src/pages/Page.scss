@@ -162,13 +162,8 @@
 			left: -8%;
 			opacity: 0.1;
 			max-height: 100%;
-
-			// width: 5000px;
 			@include breakpoint(md) {
-				left: -7.5%;
-			}
-			@include breakpoint(md) {
-				left: -50.5%;
+				left: -5%;
 			}
 		}
 		@include breakpoint(md) {
@@ -246,7 +241,7 @@
 
 			@include breakpoint(md) {
 				max-width: 1100px;
-				flex-direction: column;
+				padding: 2rem;
 			}
 			@include breakpoint(sm) {
 				max-width: 100%;
@@ -260,8 +255,9 @@
 			gap: 2rem;
 			width: 70%;
 			@include breakpoint(md) {
-				padding-top: 4rem;
+				// padding-top: 4rem;
 				width: 90%;
+				height: 100%;
 			}
 			@include breakpoint(sm) {
 				width: 100%;
@@ -271,10 +267,12 @@
 		.purpose,
 		.build {
 			margin: 0 auto;
+
 			@include breakpoint(sm) {
 				padding: 2rem 0;
 				margin: unset;
 			}
+
 			h2 {
 				font-size: 2rem;
 				font-weight: 800;
@@ -284,6 +282,9 @@
 				line-height: $lineHeightSM;
 				width: 90%;
 				font-size: 16px;
+				@include breakpoint(md) {
+					width: 90%;
+				}
 				@include breakpoint(sm) {
 					width: 100%;
 				}
@@ -322,6 +323,28 @@
 					@include breakpoint(sm) {
 						transform: none;
 					}
+				}
+			}
+		}
+		.showcase {
+			align-items: center;
+			@include breakpoint(md) {
+				// padding-top: 4rem;
+				padding: 0;
+				width: 40%;
+			}
+			.select-wrapper {
+				height: 100%;
+				display: flex;
+				align-items: center;
+				flex-direction: column;
+				justify-content: center;
+				gap: 1rem;
+
+				.container {
+					min-height: 50px;
+					// border: 1px solid $gray;
+					background-color: white;
 				}
 			}
 		}
@@ -382,7 +405,9 @@
 			gap: 1rem;
 			position: relative;
 			z-index: 1;
-
+			@include breakpoint(md) {
+				max-width: 1100px;
+			}
 			.text {
 				height: 100%;
 				display: flex;
