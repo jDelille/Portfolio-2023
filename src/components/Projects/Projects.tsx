@@ -16,7 +16,7 @@ export default function Projects({ sectionRef }: ProjectsProps) {
   const projectElements = useRef<(HTMLElement | null)[]>([]);
 
   useEffect(() => {
-    fetch('https://api.npmjs.org/downloads/point/last-week/jd-react-select')
+    fetch('https://api.npmjs.org/downloads/point/last-year/jd-react-select')
       .then((response) => response.json())
       .then((data) => setPackageData(data))
       .catch((error) => console.error(error));

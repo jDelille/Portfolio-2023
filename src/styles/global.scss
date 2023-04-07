@@ -48,13 +48,14 @@ a {
 	display: flex;
 	justify-content: center;
 	position: relative;
-	height: 100vh;
+	// height: 100vh;
 	@include breakpoint(sm) {
 		flex-direction: column;
 		overflow-x: hidden;
 	}
 	@include breakpoint(md) {
 		padding: 16px;
+		
 	}
 
 	.layout {
