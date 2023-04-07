@@ -3,18 +3,25 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
-export function animate(appRef: React.RefObject<HTMLElement>) {
+export function animate(appRef: React.RefObject<HTMLElement>, heroRef: React.RefObject<HTMLElement>, nameRef: React.RefObject<HTMLElement>, bioRef: React.RefObject<HTMLElement>, laptopRef: React.RefObject<HTMLElement>, infoRef: React.RefObject<HTMLElement>) {
  const app = appRef.current;
- const tl = gsap.timeline({ delay: 1.4 });
+ const hero = heroRef.current;
+ const name = nameRef.current;
+ const bio = bioRef.current;
+ const laptop = laptopRef.current;
+ const info = infoRef.current;
 
- tl.fromTo('.hero', { opacity: 0, x: 200 }, { opacity: 1, x: 0 })
-  .fromTo('.project-name', { y: -10, opacity: 0, delay: 1 }, { y: 10, opacity: 1 })
-  .fromTo('.project-brief', { y: -10, opacity: 0 }, { y: 10, opacity: 1 })
-  .fromTo('.laptop', { y: 20, opacity: 0 }, { y: 10, opacity: 1 })
-  .fromTo('.info-wrapper', { y: 20, opacity: 0 }, { y: 10, opacity: 1 });
+ const tl = gsap.timeline({ delay: 1 });
+
+ tl.fromTo(hero, { opacity: 0, x: 200 }, { opacity: 1, x: 0 })
+  .fromTo(name, { y: -10, opacity: 0, delay: 1 }, { y: 10, opacity: 1 })
+  .fromTo(bio, { y: -10, opacity: 0 }, { y: 10, opacity: 1 })
+  .fromTo(laptop, { y: 20, opacity: 0 }, { y: 10, opacity: 1 })
+  .fromTo(info, { y: 20, opacity: 0 }, { y: 10, opacity: 1 });
 
  ScrollTrigger.create({
   trigger: app,
+  start: 'top 80%',
   animation: tl,
   toggleActions: 'play none none none',
  });

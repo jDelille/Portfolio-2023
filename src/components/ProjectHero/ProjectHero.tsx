@@ -1,5 +1,5 @@
-import { useLayoutEffect } from 'react';
-import gsap from 'gsap';
+import { useLayoutEffect, useRef } from 'react';
+import { gsap } from 'gsap';
 import { animate } from '../Animations/Animations';
 import { projects } from '../Projects/projects.json';
 import './ProjectHero.scss';
@@ -11,6 +11,11 @@ type ProjectHeroProps = {
 };
 
 export default function ProjectHero({ index, app }: ProjectHeroProps) {
+ const heroRef = useRef(null);
+ const nameRef = useRef(null);
+ const bioRef = useRef(null);
+ const laptopRef = useRef(null);
+ const infoRef = useRef(null);
 
  const project = projects[index];
  const {
@@ -26,26 +31,26 @@ export default function ProjectHero({ index, app }: ProjectHeroProps) {
 
  useLayoutEffect(() => {
   let ctx = gsap.context(() => {
-   animate(app);
+   animate(app, heroRef, nameRef, bioRef, laptopRef, infoRef);
   }, app);
   return () => ctx.revert();
  }, []);
 
 
  return (
-  <div className='project-hero'>
+  <div className='project-hero' ref={heroRef}>
    <div className='hero-content'>
     <div className='text'>
-     <h1 className={npm ? 'npm-title' : 'project-name'}>{projectName}</h1>
-     <p className='project-brief'>{projectBio}</p>
+     <h1 className={npm ? 'npm-title' : 'project-name'} ref={nameRef}>{projectName}</h1>
+     <p className='project-brief' ref={bioRef}>{projectBio}</p>
     </div>
 
     <div className='image'>
-     <img src={projectImageSmall} alt='' className='laptop' />
+     <img src={projectImageSmall} alt='' className='laptop' ref={laptopRef} />
     </div>
 
-    <div className='project-info'>
-     <div className='info-wrapper'>
+    <div className='project-info' >
+     <div className='info-wrapper' ref={infoRef}>
       <p className='info-one'>
        <span style={{ color: projectColor }}>Role</span>
        {projectRole}
