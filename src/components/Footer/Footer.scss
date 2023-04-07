@@ -5,12 +5,15 @@
 footer {
 	height: 350px;
 	background-color: $lead;
+
 	.footer-content {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 		height: 100%;
+		@include breakpoint(sm) {
+		}
 		.links {
 			padding: 2rem 0;
 			display: flex;
