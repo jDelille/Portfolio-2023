@@ -3,6 +3,7 @@ import External from '../../icons/External';
 import GithubIcon from '../../icons/GithubIcon';
 import LinkedinIcon from '../../icons/LinkedinIcon';
 import './Home.scss';
+import ResumeIcon from '../../icons/ResumeIcon';
 
 type HomeProps = {
  onSetActiveLink: (link: string) => void;
@@ -34,6 +35,11 @@ export default function Home({ onSetActiveLink, activeLink }: HomeProps) {
     <a href='https://github.com/jDelille' target='_blank' className='github'>
      <GithubIcon />
      <p>Github</p>
+     <External />
+    </a>
+    <a href='https://docs.google.com/document/d/1AGPHOLiB3M8XwYzwolbal55d3XLsWpNo67Sf6_J55s8' target='_blank' className='github'>
+     <ResumeIcon />
+     <p>Resume</p>
      <External />
     </a>
    </div>

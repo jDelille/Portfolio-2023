@@ -14,7 +14,7 @@ export default function About({ sectionRef }: AboutProps) {
   <h1>About Me</h1>
   <div className="about-me">
    <p>Hey, I'm Justin. I love coding, creating websites, and learning new technolgies to make myself a better, more efficient developer. My passion for web development started in college at Arizona State University where I studied computer science. I decided to take my skills to the next level by enrolling in a Full Stack Web Development bootcamp called DevMountain. I then worked with an amazing company called 808 Partners where my skills and passion as a developer sky rocketed.</p>
-   <p>Right now, my go to technologies to work with are <span>React, Next.js, TypeScript, JavaScript, SCSS, and Firebase.</span> I recently grew to love TypeScript and have been coding with that religiously. To test my TypeScript skills in React, I decided to create a reusable component that I published as an NPM which currently has over 700 weekly downloads. </p>
+   <p>Right now, my go to technologies to work with are <span>React, Next.js, TypeScript, JavaScript, SCSS, and Firebase.</span> I recently grew to love TypeScript and have been coding with that religiously. To test my TypeScript skills in React, I decided to create a reusable component that I published as an NPM which currently has over 700 downloads. </p>
   </div>
   <div className="skills-container">
    <h1>Skills</h1>
