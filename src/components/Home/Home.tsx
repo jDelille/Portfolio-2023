@@ -37,11 +37,7 @@ export default function Home({ onSetActiveLink, activeLink }: HomeProps) {
      <p>Github</p>
      <External />
     </a>
-    <a href='https://docs.google.com/document/d/1AGPHOLiB3M8XwYzwolbal55d3XLsWpNo67Sf6_J55s8' target='_blank' className='github'>
-     <ResumeIcon />
-     <p>Resume</p>
-     <External />
-    </a>
+
    </div>
   </section>
  );

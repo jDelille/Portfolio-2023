@@ -1,5 +1,7 @@
 
 import { RefObject, useEffect } from 'react';
+import External from '../../icons/External';
+import ResumeIcon from '../../icons/ResumeIcon';
 import './About.scss';
 
 type AboutProps = {
@@ -15,11 +17,13 @@ export default function About({ sectionRef }: AboutProps) {
   <div className="about-me">
    <p>Hey, I'm Justin. I love coding, creating websites, and learning new technolgies to make myself a better, more efficient developer. My passion for web development started in college at Arizona State University where I studied computer science. I decided to take my skills to the next level by enrolling in a Full Stack Web Development bootcamp called DevMountain. I then worked with an amazing company called 808 Partners where my skills and passion as a developer sky rocketed.</p>
    <p>Right now, my go to technologies to work with are <span>React, Next.js, TypeScript, JavaScript, SCSS, and Firebase.</span> I recently grew to love TypeScript and have been coding with that religiously. To test my TypeScript skills in React, I decided to create a reusable component that I published as an NPM which currently has over 700 downloads. </p>
+   <p className='resume'> View my resume  <a href='https://docs.google.com/document/d/1AGPHOLiB3M8XwYzwolbal55d3XLsWpNo67Sf6_J55s8' target='_blank' >
+    <ResumeIcon />
+   </a></p>
   </div>
   <div className="skills-container">
    <h1>Skills</h1>
    <div className="skills">
-
     <p>React</p>
     <p>TypeScript</p>
     <p>Next.js</p>
@@ -41,31 +45,5 @@ export default function About({ sectionRef }: AboutProps) {
     <p>At Dev Mountain, I learned the industries best practices for working on the front-end and the back-end. The technologies used were mainly React, Javascript, and NoSQL Databases, but I also worked with Python and SQL Databases. Besides learning to write better code, I also learned how to pair-program with other developers and how to mentor other developers. </p>
    </div>
   </div>
-
-
-
-  {/* <div className="skills-container">
- 
-  </div> */}
-
-  {/* <div className="experience-container">
-   <div className="experience-one">
-    <h3>808 Partners</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore temporibus, quam consequatur illo necessitatibus minus quaerat. Quis tenetur voluptate beatae, repellendus dolorem ipsam est saepe tempore eaque veritatis facilis repudiandae!</p>
-    <div className="tech">
-     <span>Technologies Used: </span>
-     <br />
-     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat error minima veniam accusantium tempora deleniti, non, vel ratione cupiditate, enim magni aliquam voluptate eligendi facilis delectus. Atque corporis at nemo!
-    </div>
-   </div>
-   <div className="experience-two">
-    <h3>DevMountain</h3>
-    <span>Technologies Used: </span>
-    <br />
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore temporibus, quam consequatur illo necessitatibus minus quaerat. Quis tenetur voluptate beatae, repellendus dolorem ipsam est saepe tempore eaque veritatis facilis repudiandae!</p>
-   </div>
-  </div> */}
  </section>;
 }
-
-// My go to technologies to work with are React, Next.js, TypeScript, JavaScript, SCSS, and Firebase. 

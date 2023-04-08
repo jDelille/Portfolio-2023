@@ -46,6 +46,27 @@
 		span {
 			color: $honey;
 		}
+		.resume {
+			display: flex;
+			align-items: center;
+			padding: 0;
+			cursor: pointer;
+			&:hover {
+				text-decoration: underline;
+				text-decoration-color: $honey;
+				text-decoration-thickness: 2px;
+			}
+			.resume-icon {
+				max-height: 20px;
+				display: flex;
+				align-items: center;
+				path {
+					&:nth-child(1) {
+						fill: $honey;
+					}
+				}
+			}
+		}
 	}
 	.skills-container {
 		width: 100%;
