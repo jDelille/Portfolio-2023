@@ -12,20 +12,18 @@ import gsap from 'gsap';
 import $ from 'jquery';
 
 import './Project.scss';
+import ResumeIcon from '../icons/ResumeIcon';
 gsap.registerPlugin(ScrollTrigger);
 
 type ProjectProps = {
  index: number;
 };
 
-
-
 export default function Project({ index }: ProjectProps) {
  const appRef = useRef<HTMLDivElement>(null);
 
  const project = projects[index];
  const { projectColor, nextProject, nextProjectLink, nextIsNPM } = project;
-
 
  // function for next-container onclick animation for mobile devices.
  useEffect(() => {
@@ -40,7 +38,6 @@ export default function Project({ index }: ProjectProps) {
 
     $after.css('opacity', '1');
     setTimeout(function () {
-
      const href = $container.attr('href');
      if (href !== undefined) {
       window.location.href = href.toString();
@@ -57,6 +54,14 @@ export default function Project({ index }: ProjectProps) {
     <nav className='nav'>
      <div className='nav-wrapper'>
       <Link to='/'>Back home </Link>
+      {/* <p className='resume'>
+       View my resume
+       <a
+        href='https://docs.google.com/document/d/1AGPHOLiB3M8XwYzwolbal55d3XLsWpNo67Sf6_J55s8'
+        target='_blank'>
+        <ResumeIcon />
+       </a>
+      </p> */}
      </div>
     </nav>
     <ProjectHero index={index} app={appRef} />
@@ -66,7 +71,9 @@ export default function Project({ index }: ProjectProps) {
      <div className='wrapper'>
       <div className='text'>
        <p className='label'>Next Work</p>
-       <p className={nextIsNPM ? 'project-link-npm' : 'project-link'}>{nextProject}</p>
+       <p className={nextIsNPM ? 'project-link-npm' : 'project-link'}>
+        {nextProject}
+       </p>
       </div>
       <div className='arrow'>
        <ArrowIcon />
@@ -74,7 +81,7 @@ export default function Project({ index }: ProjectProps) {
      </div>
     </a>
     <Footer />
-   </div >
+   </div>
   </>
  );
 }

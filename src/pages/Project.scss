@@ -21,6 +21,27 @@
 			max-width: 1100px;
 			padding: 0;
 		}
+		.resume {
+			margin-left: auto;
+			display: flex;
+			align-items: center;
+			gap: 0.5rem;
+			font-size: 16px;
+			&:hover {
+				cursor: pointer;
+				text-decoration: underline;
+				text-decoration-color: $honey;
+				text-decoration-thickness: 2px;
+			}
+			.resume-icon {
+				max-height: 20px;
+				display: flex;
+
+				path {
+					fill: $honey;
+				}
+			}
+		}
 	}
 }
 

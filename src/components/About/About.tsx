@@ -31,6 +31,7 @@ export default function About({ sectionRef }: AboutProps) {
     <p>NoSQL</p>
     <p>Redux</p>
     <p>MobX</p>
+    <p>Figma</p>
    </div>
   </div>
 
