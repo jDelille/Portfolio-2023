@@ -18,7 +18,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "fretify",
+    path: "wagerly",
     element: (
       <Project index={0} />
     ),
@@ -30,9 +30,15 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "jd-react-select",
+    path: "fretify",
     element: (
       <Project index={2} />
+    ),
+  },
+  {
+    path: "jd-react-select",
+    element: (
+      <Project index={3} />
     ),
   },
 ]);

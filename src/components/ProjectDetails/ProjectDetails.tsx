@@ -13,6 +13,14 @@ type ProjectDetailsProps = {
  app: React.RefObject<HTMLElement>
 };
 
+
+// showcase
+const options = [
+ { label: 'First', value: 1 },
+ { label: 'Second', value: 2 },
+ { label: 'Third', value: 3 },
+];
+
 export default function ProjectDetails({ index, app }: ProjectDetailsProps) {
 
  const purposeRef = useRef(null);
@@ -41,12 +49,6 @@ export default function ProjectDetails({ index, app }: ProjectDetailsProps) {
   ScrollTrigger.refresh();
  }, []);
 
- // showcase
- const options = [
-  { label: 'First', value: 1 },
-  { label: 'Second', value: 2 },
-  { label: 'Third', value: 3 },
- ];
 
  const [value, setValue] = useState<SelectOption | undefined>(options[0]);
 
