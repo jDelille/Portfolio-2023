@@ -30,6 +30,8 @@
 		@include breakpoint(md) {
 			max-width: 1100px;
 			padding: 2rem;
+			justify-content: center;
+			align-items: center;
 		}
 		@include breakpoint(sm) {
 			max-width: 100%;
@@ -83,10 +85,11 @@
 		display: flex;
 		flex-direction: column;
 		gap: 2rem;
-		width: 50%;
+		width: 100%;
+		align-items: center;
 		@include breakpoint(md) {
 			padding-top: 4rem;
-			width: 40%;
+			width: 100%;
 		}
 		@include breakpoint(sm) {
 			width: 100%;
@@ -96,13 +99,11 @@
 			max-width: 100%;
 
 			@include breakpoint(md) {
-				max-width: 532px;
-				margin-right: auto;
+				max-width: 100%;
 			}
 			@include breakpoint(sm) {
 				width: 98%;
 				padding: 0 1rem;
-				margin-right: auto;
 			}
 			transition: all 200ms ease-in-out;
 
@@ -120,7 +121,7 @@
 		@include breakpoint(md) {
 			// padding-top: 4rem;
 			padding: 0;
-			width: 40%;
+			width: 100%;
 		}
 		@include breakpoint(sm) {
 			// padding-top: 4rem;

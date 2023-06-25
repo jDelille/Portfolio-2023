@@ -25,11 +25,14 @@ export default function About({ sectionRef }: AboutProps) {
     <p>TypeScript</p>
     <p>Next.js</p>
     <p>SCSS</p>
+    <p>API</p>
     <p>NoSQL</p>
     <p>Redux</p>
     <p>MobX</p>
     <p>Prisma</p>
     <p>Figma</p>
+    <p>Jira</p>
+    <p>Git</p>
    </div>
   </div>
 
